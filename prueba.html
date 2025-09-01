@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulacro ExploraNica</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { color: #2c3e50; }
+    .question { margin-bottom: 15px; padding: 10px; background: #fff; border-radius: 8px; }
+    button { margin: 10px 5px; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    .correct { background: #2ecc71; color: #fff; }
+    .incorrect { background: #e74c3c; color: #fff; }
+    #result { font-size: 18px; margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>📌 Simulacro ExploraNica</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. ¿Cuál es el objetivo principal de ExploraNica?</p>
+      <input type="radio" name="q1" value="a"> a) Vender paquetes turísticos internacionales<br>
+      <input type="radio" name="q1" value="b"> b) Promover el patrimonio cultural, histórico y natural de Nicaragua<br>
+      <input type="radio" name="q1" value="c"> c) Sustituir a las agencias de viaje en el país<br>
+      <input type="radio" name="q1" value="d"> d) Ser una red social de viajeros<br>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué problema busca resolver ExploraNica?</p>
+      <input type="radio" name="q2" value="a"> a) La falta de transporte en zonas rurales<br>
+      <input type="radio" name="q2" value="b"> b) La falta de información centralizada y confiable sobre destinos turísticos<br>
+      <input type="radio" name="q2" value="c"> c) El costo elevado de viajar dentro del país<br>
+      <input type="radio" name="q2" value="d"> d) La competencia entre hoteles<br>
+    </div>
+    <div class="question">
+      <p>3. ¿Cuál es el público meta principal de ExploraNica?</p>
+      <input type="radio" name="q3" value="a"> a) Empresas multinacionales<br>
+      <input type="radio" name="q3" value="b"> b) Políticos y autoridades<br>
+      <input type="radio" name="q3" value="c"> c) Jóvenes, familias nicaragüenses y turistas internacionales<br>
+      <input type="radio" name="q3" value="d"> d) Solo turistas extranjeros<br>
+    </div>
+    <div class="question">
+      <p>4. ¿Qué diferencia ExploraNica de otras páginas de turismo en Nicaragua?</p>
+      <input type="radio" name="q4" value="a"> a) Se centra únicamente en hoteles de lujo<br>
+      <input type="radio" name="q4" value="b"> b) Incluye herramientas interactivas como mapas y vistas 360°<br>
+      <input type="radio" name="q4" value="c"> c) No requiere conexión a internet<br>
+      <input type="radio" name="q4" value="d"> d) Cobra membresía obligatoria<br>
+    </div>
+    <div class="question">
+      <p>5. ¿Qué medidas de seguridad aplicará ExploraNica?</p>
+      <input type="radio" name="q5" value="a"> a) Uso de antivirus gratuito<br>
+      <input type="radio" name="q5" value="b"> b) Políticas de privacidad y SSL/HTTPS<br>
+      <input type="radio" name="q5" value="c"> c) Contraseñas compartidas entre usuarios<br>
+      <input type="radio" name="q5" value="d"> d) Sin medidas, porque no se necesita<br>
+    </div>
+    <div class="question">
+      <p>6. ¿Qué red social será clave para el marketing de ExploraNica?</p>
+      <input type="radio" name="q6" value="a"> a) LinkedIn<br>
+      <input type="radio" name="q6" value="b"> b) Instagram<br>
+      <input type="radio" name="q6" value="c"> c) Telegram<br>
+      <input type="radio" name="q6" value="d"> d) Reddit<br>
+    </div>
+    <div class="question">
+      <p>7. ¿Qué tipo de contenido se publicará en redes sociales?</p>
+      <input type="radio" name="q7" value="a"> a) Noticias políticas<br>
+      <input type="radio" name="q7" value="b"> b) Información sobre destinos, gastronomía, cultura y naturaleza<br>
+      <input type="radio" name="q7" value="c"> c) Clases de programación<br>
+      <input type="radio" name="q7" value="d"> d) Solo publicidad de hoteles<br>
+    </div>
+    <div class="question">
+      <p>8. ¿Qué estrategia se usará para atraer público internacional?</p>
+      <input type="radio" name="q8" value="a"> a) Campañas en inglés, Google Ads y alianzas con agencias de turismo<br>
+      <input type="radio" name="q8" value="b"> b) Crear una versión exclusiva en francés<br>
+      <input type="radio" name="q8" value="c"> c) Solo depender de recomendaciones de boca en boca<br>
+      <input type="radio" name="q8" value="d"> d) Publicar únicamente en Facebook<br>
+    </div>
+    <div class="question">
+      <p>9. ¿Qué valor de marca quiere transmitir ExploraNica?</p>
+      <input type="radio" name="q9" value="a"> a) Exclusividad y lujo<br>
+      <input type="radio" name="q9" value="b"> b) Confianza, autenticidad, orgullo cultural y aventura<br>
+      <input type="radio" name="q9" value="c"> c) Rápidas promociones con descuentos agresivos<br>
+      <input type="radio" name="q9" value="d"> d) Neutralidad sin identidad<br>
+    </div>
+    <div class="question">
+      <p>10. ¿Qué métrica NO es un KPI de marketing digital para ExploraNica?</p>
+      <input type="radio" name="q10" value="a"> a) Engagement en redes sociales<br>
+      <input type="radio" name="q10" value="b"> b) Número de seguidores<br>
+      <input type="radio" name="q10" value="c"> c) Cantidad de clics a la web<br>
+      <input type="radio" name="q10" value="d"> d) Temperatura promedio del país<br>
+    </div>
+    <div class="question">
+      <p>11. ¿Cómo se mantendrá actualizado el contenido de la plataforma?</p>
+      <input type="radio" name="q11" value="a"> a) Con actualizaciones automáticas desde Google Maps<br>
+      <input type="radio" name="q11" value="b"> b) Mediante un equipo de gestión de contenido y aportes de usuarios<br>
+      <input type="radio" name="q11" value="c"> c) Solo con datos de libros antiguos<br>
+      <input type="radio" name="q11" value="d"> d) No necesita actualizarse<br>
+    </div>
+    <div class="question">
+      <p>12. ¿Qué impacto tendrá ExploraNica en comunidades locales?</p>
+      <input type="radio" name="q12" value="a"> a) Disminuirá sus oportunidades económicas<br>
+      <input type="radio" name="q12" value="b"> b) Generará más visibilidad y oportunidades turísticas<br>
+      <input type="radio" name="q12" value="c"> c) Les quitará protagonismo a los guías<br>
+      <input type="radio" name="q12" value="d"> d) Cerrará negocios pequeños<br>
+    </div>
+    <div class="question">
+      <p>13. ¿Qué herramienta se usará para analizar tráfico en la web?</p>
+      <input type="radio" name="q13" value="a"> a) Microsoft Excel<br>
+      <input type="radio" name="q13" value="b"> b) Google Analytics<br>
+      <input type="radio" name="q13" value="c"> c) TikTok Ads Manager<br>
+      <input type="radio" name="q13" value="d"> d) Word<br>
+    </div>
+    <div class="question">
+      <p>14. ¿Qué eslogan refleja mejor la esencia de ExploraNica?</p>
+      <input type="radio" name="q14" value="a"> a) “Compra rápido, viaja rápido”<br>
+      <input type="radio" name="q14" value="b"> b) “Descubre la esencia de Nicaragua”<br>
+      <input type="radio" name="q14" value="c"> c) “Turismo de lujo para pocos”<br>
+      <input type="radio" name="q14" value="d"> d) “El secreto mejor guardado de Europa”<br>
+    </div>
+    <div class="question">
+      <p>15. ¿Qué riesgo enfrenta ExploraNica y cómo se mitigará?</p>
+      <input type="radio" name="q15" value="a"> a) Falta de financiamiento → mediante alianzas estratégicas<br>
+      <input type="radio" name="q15" value="b"> b) Saturación de turistas → cerrando la web<br>
+      <input type="radio" name="q15" value="c"> c) Falta de contenido → eliminando usuarios<br>
+      <input type="radio" name="q15" value="d"> d) Problemas de idioma → usando solo español<br>
+    </div>
+    <button type="button" onclick="calificar()">✅ Calificar</button>
+    <button type="reset">🔄 Reiniciar</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    const respuestasCorrectas = {
+      q1: "b", q2: "b", q3: "c", q4: "b", q5: "b",
+      q6: "b", q7: "b", q8: "a", q9: "b", q10: "d",
+      q11: "b", q12: "b", q13: "b", q14: "b", q15: "a"
+    };
+
+    function calificar() {
+      let form = document.forms["quizForm"];
+      let aciertos = 0;
+      let total = Object.keys(respuestasCorrectas).length;
+
+      for (let q in respuestasCorrectas) {
+        let respuesta = form[q].value;
+        if (respuesta === respuestasCorrectas[q]) {
+          aciertos++;
+        }
+      }
+
+      document.getElementById("result").innerText =
+        "Tu puntuación: " + aciertos + " / " + total;
+    }
+  </script>
+</body>
+</html>
